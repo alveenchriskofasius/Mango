@@ -65,7 +65,7 @@ namespace Mango.Web.Service
 					case HttpStatusCode.Forbidden:
 						return new() { IsSuccess = false, Message = "Access Denied" };
 					case HttpStatusCode.Unauthorized:
-						return new() { IsSuccess = false, Message = "Access Denied" };
+						return new() { IsSuccess = false, Message = "Unauthorized" };
 					case HttpStatusCode.InternalServerError:
 						return new() { IsSuccess = false, Message = "Internal Server Error" };
 					default:
